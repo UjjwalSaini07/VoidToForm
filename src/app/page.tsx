@@ -1,4 +1,3 @@
-import { HackathonCard } from "@/components/main/hackathon-card";
 import BlurFade from "@/components/ui/magicui/blur-fade";
 import BlurFadeText from "@/components/ui/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/main/project-card";
@@ -45,9 +44,7 @@ export default function Page() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           {/* <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert"> */}
-          <Markdown>
-            {DATA.summary}
-          </Markdown>
+          <Markdown>{DATA.summary}</Markdown>
         </BlurFade>
       </section>
       <section id="work">
@@ -124,7 +121,8 @@ export default function Page() {
                   Explore My Innovative Solutions
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  From socially impactful web apps to innovative hackathon solutions, here are some of my most notable projects.
+                  From socially impactful web apps to innovative hackathon
+                  solutions, here are some of my most notable projects.
                 </p>
               </div>
             </div>
@@ -160,12 +158,14 @@ export default function Page() {
                   Inspiration
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-  I love bringing ideas to life
-</h2>
-<p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-  Whether it’s crafting seamless user interfaces, building real-time systems, or engineering scalable backend solutions, I turn complex problems into impactful digital experiences that resonate and perform.
-</p>
-
+                  I love bringing ideas to life
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Whether it’s crafting seamless user interfaces, building
+                  real-time systems, or engineering scalable backend solutions,
+                  I turn complex problems into impactful digital experiences
+                  that resonate and perform.
+                </p>
               </div>
             </div>
           </BlurFade>
