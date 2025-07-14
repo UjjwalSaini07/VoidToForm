@@ -8,9 +8,9 @@ export const DATA = {
   location: "New Delhi, India",
   locationLink: "https://www.google.com/maps/place/New+Delhi,+Delhi",
   description:
-    "MERN wizard, ML explorer, and open-source enthusiast turning ideas into impactful applications.",
+    "MERN stack developer and open-source contributor building bold, user-focused, high-impact digital solutions.",
   summary:
-    "I'm a full-stack developer and AI enthusiast with a proven track record in building high-performance, scalable solutions. With hands-on experience in real-time systems, AI chatbots, and finance platforms, I specialize in React, Node.js, and Next.js. From contributing to open source at GSsoc to winning hackathons and publishing NPM packages, I bring passion, innovation, and a drive for excellence to every project. [See my full resume here](https://drive.google.com/file/d/1PJ9fEjJxAXDQcByG0nscwf_SelgeWKCy/view?usp=sharing)",
+    "I'm a full-stack developer and AI enthusiast with a proven track record in building scalable, high-performance applications. Specialized in the MERN stack, I’ve developed real-time systems, AI chatbots, and finance platforms that solve complex problems with efficiency and impact. From contributing to open-source at GSSoC to participating in multiple hackathons and publishing NPM packages, I bring innovation, precision, and a problem-solving mindset to every project. [CHECK RESUME HERE...](https://drive.google.com/file/d/1i11YmIoHXteCGHSBnVGBcit82c34tI2a/view?usp=sharing)",
   avatarUrl: "/assets/profile.png",
   skills: [ "React", "Next.js", "Node.js", "Typescript", "Python", "MongoDB", "Docker", "Tailwind CSS", "PostgreSQL", "Google Cloud", "GitHub Actions", "Firebase", "C++", "Java", ],
   navbar: [
@@ -71,11 +71,11 @@ export const DATA = {
   work: [
     {
       company: "Curious Business Solution Pvt. Ltd.",
-      href: "https://curious.co.in",
+      href: "#",
       badges: [],
       location: "Remote",
       title: "Full Stack Developer Intern",
-      logoUrl: "/assets/icons/companies_icons/Curious_Logo.png",
+      logoUrl: "/assets/company/CBS.png",
       start: "July 2024",
       end: "April 2025",
       description:
@@ -83,11 +83,11 @@ export const DATA = {
     },
     {
       company: "IBM Skillbuilds",
-      href: "https://www.ibm.com/skills",
+      href: "#",
       badges: [],
       location: "Remote",
       title: "Frontend Developer Intern",
-      logoUrl: "/assets/icons/companies_icons/IBM.png",
+      logoUrl: "/assets/company/IBM_Logo.png",
       start: "June 2024",
       end: "August 2024",
       description:
@@ -98,8 +98,8 @@ export const DATA = {
     {
       school: "Guru Gobind Singh Indraprastha University",
       href: "#",
-      degree: "Bachelor of Technology in Information Technology",
-      logoUrl: "/assets/icons/education_icons/College.png",
+      degree: "Bachelor of Technology in Information Technology - 9.21",
+      logoUrl: "/assets/education_icons/GGSIU_logo.png",
       start: "2022",
       end: "2026",
     },
@@ -107,7 +107,7 @@ export const DATA = {
       school: "S B Mills Senior Secondary School",
       href: "#",
       degree: "Senior Secondary (PCM) - 85.4%",
-      logoUrl: "/assets/icons/education_icons/Class12.png",
+      logoUrl: "/assets/education_icons/Class12.png",
       start: "2019",
       end: "2021",
     },
@@ -115,7 +115,7 @@ export const DATA = {
       school: "S M Arya Public School",
       href: "#",
       degree: "Secondary Education - 80%",
-      logoUrl: "/assets/icons/education_icons/Class10.png",
+      logoUrl: "/assets/education_icons/Class10.png",
       start: "2014",
       end: "2019",
     },
