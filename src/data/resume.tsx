@@ -12,7 +12,7 @@ export const DATA = {
   summary:
     "I'm a full-stack developer and AI enthusiast with a proven track record in building scalable, high-performance applications. Specialized in the MERN stack, I’ve developed real-time systems, AI chatbots, and finance platforms that solve complex problems with efficiency and impact. From contributing to open-source at GSSoC to participating in multiple hackathons and publishing NPM packages, I bring innovation, precision, and a problem-solving mindset to every project. [CHECK RESUME HERE...](https://drive.google.com/file/d/1i11YmIoHXteCGHSBnVGBcit82c34tI2a/view?usp=sharing)",
   avatarUrl: "/assets/profile.png",
-  skills: [ "React", "Next.js", "Node.js", "Typescript", "Python", "MongoDB", "Docker", "Tailwind CSS", "PostgreSQL", "Google Cloud", "GitHub Actions", "Firebase", "C++", "Java", ],
+  skills: [ "Python", "CPP", "Javascript", "Typescript", "React", "Next.js", "Node.js", "Express", "MongoDB", "Docker", "Tailwind CSS", "SASS", "Mysql", "PostgreSQL", "Redis", "Google Cloud", "GitHub Actions", "Firebase", "Postman", "Docker", "Jenkins", "Git", "Github" ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/#experience", icon: Icons.briefcase, label: "Experience" },
