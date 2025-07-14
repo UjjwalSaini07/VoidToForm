@@ -1,3 +1,6 @@
+"use client";
+
+import { useRouter } from 'next/navigation';
 import BlurFade from "@/components/ui/magicui/blur-fade";
 import BlurFadeText from "@/components/ui/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/main/project-card";
@@ -7,10 +10,15 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { ShinyButton } from "@/components/ui/magicui/shiny-button";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push('/#projects');
+  };
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -127,12 +135,9 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px]">
             {DATA.projects.map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-              >
+              <BlurFade key={project.title} delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
                 <ProjectCard
                   href={project.href}
                   key={project.title}
@@ -141,15 +146,18 @@ export default function Page() {
                   dates={project.dates}
                   tags={project.technologies}
                   image={project.image}
-                  // video={project.video}
                   links={project.links}
                 />
               </BlurFade>
             ))}
+
+            <div className="sm:col-span-2 flex justify-center mt-4 -mb-7">
+              <ShinyButton onClick={handleClick}>Check Out More...</ShinyButton>
+            </div>
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      <section id="inspirations">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -183,14 +191,13 @@ export default function Page() {
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Want to chat? Just shoot me a dm{" "}
-                {/* <Link
-                  href={DATA.contact.social.X.url}
+                <Link
+                  href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
-                </Link>{" "} */}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                  with a direct question on linkedin
+                </Link>{" "}
+                and I&apos;ll respond whenever I can.
               </p>
             </div>
           </BlurFade>

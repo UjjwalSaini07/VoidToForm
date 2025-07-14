@@ -15,14 +15,14 @@ export const DATA = {
   skills: [ "Python", "CPP", "Javascript", "Typescript", "React", "Next.js", "Node.js", "Express", "MongoDB", "Docker", "Tailwind CSS", "SASS", "Mysql", "PostgreSQL", "Redis", "Google Cloud", "GitHub Actions", "Firebase", "Postman", "Docker", "Jenkins", "Git", "Github" ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/#experience", icon: Icons.briefcase, label: "Experience" },
+    { href: "/#work", icon: Icons.briefcase, label: "Experience" },
     { href: "/#skills", icon: Icons.skills, label: "Skills" },
     { href: "/#projects", icon: CodeIcon, label: "Projects" },
 
   ],
   contact: {
     email: "ujjwalsaini0007@gmail.com",
-    tel: "+91 9717899079",
+    tel: "+9197xxxx",
     social: {
       GitHub: {
         name: "GitHub",
@@ -127,7 +127,7 @@ export const DATA = {
       dates: "April 2025",
       active: true,
       description:
-        "A real-time trading platform for crypto and stocks, featuring advanced charting, personalized dashboards, and smart watchlists. Improved user engagement by 25% with smart analytics and clean UI.",
+        "Built a real-time trading platform for crypto and stocks with advanced charting, customizable dashboards, and intelligent watchlists. Enhanced user engagement by 25% through smart analytics and an intuitive, clean UI.",
       technologies: [ "React", "Redux", "MongoDB", "Nodejs", "Express", "Python", "TailwindCss", "GitHub Actions", "Firebase", "Typescript"],
       links: [
         {
@@ -149,7 +149,7 @@ export const DATA = {
       dates: "April 2025",
       active: true,
       description:
-        "Conversational AI bot using Groq, Gemini AI & speech-to-text for seamless human-like interaction. Boosted customer engagement by 30%.",
+        "Developed a conversational AI bot leveraging Groq, Gemini AI, and real-time speech-to-text for fluid, human-like interactions across platforms. Improved customer engagement by 30% through responsive and intuitive dialogue flow.",
       technologies: [ "Next.js", "Tailwind", "Google Cloud", "Docker", "AI SDKs", ],
       links: [
         {
@@ -166,13 +166,13 @@ export const DATA = {
       image: "/assets/projects/NeuraAI.png",
     },
     {
-      title: "SkyStream - WebRTC Collab Platform",
+      title: "SkyStream - WebRTC Platform",
       href: "https://sky-stream-share.vercel.app/",
       dates: "February 2025",
       active: true,
       description:
-        "Remote collaboration tool with screen sharing, video calls, chat, and file sharing. Reduced onboarding time by 50%.",
-      technologies: [ "React", "Tailwind", "SCSS", "Firebase", "Docker", "PeerJS", ],
+        "WebRTC-powered collaboration tool with screen sharing, video calls, real-time chat, and file sharing. Reduced onboarding time by 50% through a seamless and interactive user experience.",
+      technologies: [ "React", "Tailwind", "Firebase", "Docker", "PeerJS", ],
       links: [
         {
           type: "Website",
@@ -193,8 +193,8 @@ export const DATA = {
       dates: "June 2025",
       active: true,
       description:
-        "AI-based logistics platform for real-time tracking, predictive analytics & delivery optimization. Increased on-time deliveries by 35%.",
-      technologies: ["TypeScript", "Tailwind", "Docker", "ShadCn", "AI SDKs"],
+        "Smart Logistics Manager is an AI-powered MERN-stack platform for real-time tracking, route optimization, and predictive analytics. Enhanced fleet efficiency and boosted on-time deliveries by 35% through intelligent performance monitoring.",
+      technologies: ["TypeScript", "Tailwind", "Docker", "ShadCn"],
       links: [
         {
           type: "Website",
@@ -207,7 +207,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/assets/projects/Logisticsimg.png",
+      image: "/assets/projects/LogisticsPlatform.png",
     },
   ],
 } as const;
