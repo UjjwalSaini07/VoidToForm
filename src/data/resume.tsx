@@ -128,15 +128,7 @@ export const DATA = {
       active: true,
       description:
         "A real-time trading platform for crypto and stocks, featuring advanced charting, personalized dashboards, and smart watchlists. Improved user engagement by 25% with smart analytics and clean UI.",
-      technologies: [
-        "React",
-        "Redux",
-        "MongoDB",
-        "Node.js",
-        "Python",
-        "Tailwind",
-        "GitHub Actions",
-      ],
+      technologies: [ "React", "Redux", "MongoDB", "Nodejs", "Express", "Python", "TailwindCss", "GitHub Actions", "Firebase", "Typescript"],
       links: [
         {
           type: "Website",
@@ -149,7 +141,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/assets/Projects/Thumbs/InvestIQ.png",
+      image: "/assets/projects/InvestIQ.png",
     },
     {
       title: "Neura-AI - AI Chatbot",
@@ -158,13 +150,7 @@ export const DATA = {
       active: true,
       description:
         "Conversational AI bot using Groq, Gemini AI & speech-to-text for seamless human-like interaction. Boosted customer engagement by 30%.",
-      technologies: [
-        "Next.js",
-        "Tailwind",
-        "Google Cloud",
-        "Docker",
-        "AI SDKs",
-      ],
+      technologies: [ "Next.js", "Tailwind", "Google Cloud", "Docker", "AI SDKs", ],
       links: [
         {
           type: "Website",
@@ -177,7 +163,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/assets/Projects/Thumbs/AI-Powered-Chatbot.png",
+      image: "/assets/projects/NeuraAI.png",
     },
     {
       title: "SkyStream - WebRTC Collab Platform",
@@ -186,14 +172,7 @@ export const DATA = {
       active: true,
       description:
         "Remote collaboration tool with screen sharing, video calls, chat, and file sharing. Reduced onboarding time by 50%.",
-      technologies: [
-        "React",
-        "Tailwind",
-        "SCSS",
-        "Firebase",
-        "Docker",
-        "PeerJS",
-      ],
+      technologies: [ "React", "Tailwind", "SCSS", "Firebase", "Docker", "PeerJS", ],
       links: [
         {
           type: "Website",
@@ -206,7 +185,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/assets/Projects/Thumbs/SkyStream.png",
+      image: "/assets/projects/SkyStream.png",
     },
     {
       title: "Smart Logistics Manager",
@@ -218,12 +197,17 @@ export const DATA = {
       technologies: ["TypeScript", "Tailwind", "Docker", "ShadCn", "AI SDKs"],
       links: [
         {
+          type: "Website",
+          href: "https://logisticsmanager.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
           type: "Source",
           href: "https://github.com/UjjwalSaini07/Smart-Logistics-Manager",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/assets/Projects/Thumbs/Logistics.png",
+      image: "/assets/projects/Logisticsimg.png",
     },
   ],
   hackathons: [
