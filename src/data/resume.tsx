@@ -210,31 +210,4 @@ export const DATA = {
       image: "/assets/projects/Logisticsimg.png",
     },
   ],
-  hackathons: [
-    {
-      title: "GSsoc Contributor (Top Contributor)",
-      dates: "May 2024 – August 2024",
-      location: "Remote",
-      description:
-        "Contributed to 8+ open-source projects, earned 7 badges, improved features and community involvement by 30%.",
-      image: "/girlscriptsoc_logo.jpeg",
-      win: "Top Contributor",
-      links: [],
-    },
-    {
-      title: "Google Cloud Gen AI Study Jam",
-      dates: "Jan 2024 – July 2024",
-      location: "Online",
-      description:
-        "Completed full Gen AI curriculum, ranked top 0.1% globally, awarded swag kit and certifications.",
-      image: "/googlecloud.png",
-      win: "1st Place (Both Phases)",
-      links: [
-        {
-          title: "Certifications",
-          href: "https://www.ujjwalsaini.tech/certifications",
-        },
-      ],
-    },
-  ],
 } as const;
