@@ -1,37 +1,46 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion, Variants } from "framer-motion";
+import { AnimatePresence, motion, type Variants, easeOut } from "framer-motion";
 import { useMemo } from "react";
 
 interface BlurFadeTextProps {
   text: string;
   className?: string;
   variant?: {
-    hidden: { y: number };
-    visible: { y: number };
+    hidden: { y: number; opacity?: number; filter?: string };
+    visible: { y: number; opacity?: number; filter?: string };
   };
   duration?: number;
   characterDelay?: number;
   delay?: number;
   yOffset?: number;
   animateByCharacter?: boolean;
+  loop?: boolean;
 }
+
 const BlurFadeText = ({
   text,
   className,
   variant,
+  duration = 0.6,
   characterDelay = 0.03,
   delay = 0,
   yOffset = 8,
   animateByCharacter = false,
+  loop = false,
 }: BlurFadeTextProps) => {
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: "blur(8px)" },
-    visible: { y: -yOffset, opacity: 1, filter: "blur(0px)" },
+    visible: { y: 0, opacity: 1, filter: "blur(0px)" },
   };
+
   const combinedVariants = variant || defaultVariants;
   const characters = useMemo(() => Array.from(text), [text]);
+  const transitionBase = {
+    duration,
+    ease: easeOut,
+  };
 
   if (animateByCharacter) {
     return (
@@ -45,9 +54,8 @@ const BlurFadeText = ({
               exit="hidden"
               variants={combinedVariants}
               transition={{
-                yoyo: Infinity,
+                ...transitionBase,
                 delay: delay + i * characterDelay,
-                ease: "easeOut",
               }}
               className={cn("inline-block", className)}
               style={{ width: char.trim() === "" ? "0.2em" : "auto" }}
@@ -69,9 +77,8 @@ const BlurFadeText = ({
           exit="hidden"
           variants={combinedVariants}
           transition={{
-            yoyo: Infinity,
+            ...transitionBase,
             delay,
-            ease: "easeOut",
           }}
           className={cn("inline-block", className)}
         >

@@ -19,6 +19,9 @@ export default function Page() {
   const handleClick = () => {
     router.push('/#projects');
   };
+  const portfolioClick = () => {
+    router.push('/');
+  };
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -199,6 +202,9 @@ export default function Page() {
                 </Link>{" "}
                 and I&apos;ll respond whenever I can.
               </p>
+            </div>
+            <div className="sm:col-span-2 flex justify-center mt-5">
+              <ShinyButton onClick={portfolioClick}>CHECK MY MAIN PORTFOLIO</ShinyButton>
             </div>
           </BlurFade>
         </div>
